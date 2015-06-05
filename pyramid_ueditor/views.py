@@ -1,23 +1,27 @@
-﻿import json
+﻿#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+# Language Version: 3.4.x
+# Last Modified: 2015-06-04 11:45:15
+
+
+__all__ = []
+__author__ = "lfblogs (email:13701242710@163.com)"
+__version__ = "1.0.1"
+
+
+import json
 import re
-#import os
 
 from pyramid.view import view_config
 from pyramid.response import Response
 
-from ueditor_app.UeditorUploader import Uploader
-from ueditor_app.UeditorSettings import JSON_CONFIG,JSON_FILE,UEDITOR_UPLOAD_ROOT
-
-@view_config(route_name = 'home', renderer = 'templates/mytemplate.pt')
-def my_view(request):
-    return {'project': 'pyramidueditor'}
+from .utils import Uploader
+from .settings import JSON_CONFIG,JSON_FILE,UEDITOR_UPLOAD_ROOT
 
 
-@view_config(route_name = 'ueditor', renderer = 'templates/ueditor.pt')
 def ueditor(request):
     return {}   
 
-@view_config(route_name = 'ueditorupload',renderer = 'json')
 def ueditorupload(request):
     """
         UEditor文件上传接口

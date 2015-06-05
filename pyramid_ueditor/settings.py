@@ -1,11 +1,18 @@
-import os
-#windows
-UEDITOR_UPLOAD_ROOT =  os.path.join(os.getcwd(),os.getcwd().split('\\')[-1])
-JSON_FILE = os.path.join(os.getcwd(),os.getcwd().split('\\')[-1],"static/ueditor/php/config.json")
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+# Language Version: 3.4.x
+# Last Modified: 2015-06-04 11:45:15
 
-#linux/unix
-#UEDITOR_UPLOAD_ROOT =  os.path.join(os.getcwd(),os.getcwd().split('/')[-1])
-#JSON_FILE = os.path.join(os.getcwd(),os.getcwd().split('/')[-1],"static/ueditor/php/config.json")
+
+__all__ = []
+__author__ = "lfblogs (email:13701242710@163.com)"
+__version__ = "1.0.1"
+
+import os
+
+UEDITOR_UPLOAD_ROOT = os.path.dirname(__file__) #upload files  root
+UEDITOR_STATIC_ROOT = os.path.join(os.path.dirname(__file__),'static') #ueditor static files root
+JSON_FILE = os.path.join(os.path.dirname(__file__),'static/ueditor/php/config.json')
 
 JSON_CONFIG = {
 

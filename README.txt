@@ -1,1 +1,0 @@
-pyramidueditor README

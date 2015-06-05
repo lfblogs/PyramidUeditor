@@ -4,9 +4,9 @@
 <head>
     <title>PyramidUeditor demo</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <script type="text/javascript" charset="utf-8" src="${request.static_url('pyramidueditor:static/ueditor/ueditor.config.js')}"></script>
-    <script type="text/javascript" charset="utf-8" src="${request.static_url('pyramidueditor:static/ueditor/ueditor.all.min.js')}"> </script>
-    <script type="text/javascript" charset="utf-8" src="${request.static_url('pyramidueditor:static/ueditor/lang/zh-cn/zh-cn.js')}"></script>
+    <script type="text/javascript" charset="utf-8" src="/uestatic/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/uestatic/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/uestatic/static/ueditor/lang/zh-cn/zh-cn.js"></script>
 
     <style type="text/css">
         div{
