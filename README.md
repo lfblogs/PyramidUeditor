@@ -15,12 +15,16 @@
 		python setup.py install
 	* 方法二：使用pip工具在命令行运行(推荐)：
 	    pip install PyramidUeditor
-  2、配置urls
+##2、配置urls
+
 	from pyramid.static import static_view
+	
 	from pyramid_ueditor.settings import UEDITOR_STATIC_ROOT
+	
 	config.include('pyramid_ueditor')	
+	
     config.add_static_view('uestatic', path=UEDITOR_STATIC_ROOT, cache_max_age=3600)
-  3、修改pyramid_ueditor.pyramid_ueditor.settings.py 
+##3、修改pyramid_ueditor.pyramid_ueditor.settings.py 
 	 UEDITOR_UPLOAD_ROOT 为上传路径。可进行修改
-  4、自带的访问方式
+##4、自带的访问方式
       /ueditor/
