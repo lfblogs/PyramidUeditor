@@ -67,7 +67,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'bdist_wininst':
         file_info[0] = '\\PURELIB\\%s' % file_info[0]
 
 # Dynamically calculate the version based on django.VERSION.
-version = "1.0.1"
+version = "1.1.143"
 
 setup(
     name = "pyramidueditor",
